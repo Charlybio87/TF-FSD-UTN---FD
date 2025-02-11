@@ -1,0 +1,148 @@
+[
+  {
+    "id": 1,
+    "titulo": "Formaciones EB - Escuela de Baristas",
+    "curses": [
+      {
+        "id": 0,
+        "nombre": "Punto de molienda - EB",
+        "img": "/img/tiendas/punto-de-molienda-la-escuela-de-baristas.jpg",
+        "precio": "300 $",
+        "descripcion": "En este taller de La Escuela de Baristas, te enseñaremos a dominar el arte de ajustar el molino de café para obtener la molienda perfecta, adaptada a cada receta. Se trata de un paso clave que tendrás que realizar a diario, ya que el café, una vez tostado, sigue “vivo” y reacciona a factores como los cambios de temperatura y humedad. Aprenderás a entender cómo el café cambia según la fecha de tueste, las condiciones climáticas, el ambiente o incluso la cantidad de clientela que hay en el establecimiento. Te guiaremos en la práctica de realizar microajustes en el molino durante el día para que tu café mantenga siempre el mismo sabor excepcional.",
+        "duracion": "DURACIÓN: 4 horas",
+        "capaidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      },
+      {
+        "id": 1,
+        "nombre": "Intensivo café 12 días – EB",
+        "img": "/img/tiendas/1-2.jpg",
+        "precio": "4500 $",
+        "descripcion": "El curso Intensivo café 12 días de La Escuela de Baristas trata de inculcar la cultura del buen café a los y las profesionales de la hostelería para ofrecer a su clientela una experiencia cafetera completa. El curso está orientado a conocer los aspectos esenciales para preparar un buen café: desde las características del grano de café o el tueste, hasta los elementos que influyen en su extracción. También aprenderemos a realizar una variedad de recetas de café, así como a gestionar el espacio de trabajo, la seguridad e higiene.",
+        "idioma": "IDIOMA: castellano"
+      },
+      {
+        "id": 2,
+        "nombre": " Introducción al mundo del café – EB",
+        "img": "/img/tiendas/9.jpg",
+        "precio": "250 $",
+        "descripcion":"Este curso de Introducción al mundo del café es una formación propia de La Escuela de Baristas para profesionales de la HORECA y aficionados que quieran iniciarse al mundo del café con unas buenas bases. Curso ideal para camareros y/o establecimientos para actualizar conocimientos sobre el café así como mejorar la calidad de la taza gracias a un mejor conocimiento del producto, su elaboración y su servicio. Al final de cada curso, sabrás más de café, los parámetros de espresso, la técnica barista, el cuidado de la estación de trabajo, la leche, el Latte Art y recetas más conocidas.",
+        "idioma": "IDIOMA: castellano"
+      },
+      {
+        "id": 3,
+        "nombre": "Taller de Latte Art – EB",
+        "img": "/img/tiendas/9.jpg",
+        "precio": "315 $",
+        "descripcion": "Aprende a crear corazones, tulipas y espigas con la espuma de la leche en este taller grupal de Latte Art de La Escuela de Baristas. Taller perfecto para todos los que han realizado el curso de Introducción al mundo del café de La Escuela de Baristas y quieran saber más sobre la leche: de cómo reacciona al aplicarle calor y cómo podemos aprovecharnos de ellos para crear figuras en la superficie de la crema del café. En el taller, utilizaremos máquina de café espresso para profesionales como la Dalla Corte Icon.",
+        "idioma": "IDIOMA: castellano"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "Workshops",
+    "curses": [
+      {
+        "id": 0,
+        "nombre": "Home Barista Sensorial – PAMPLONA",
+        "img": "/img/tiendas/1-2.jpg",
+        "precio": "90 $",
+        "descripcion": "En nuestro workshop sensorial de café aprenderás a catar utilizando todos tu sentidos. Te guiaremos en un proceso donde el gusto y el olfato se combinan para identificar los sabores únicos y característicos de cada origen. Durante el taller, realizaremos una cata guiada en la que exploraremos los aromas del café y del agua, y los compararemos con diferentes alimentos para apreciar mejor los sabores, la frescura y las texturas. ¡Una experiencia práctica y llena de descubrimientos!",
+        "idioma": "IDIOMA: Español"
+      },
+      {
+        "id": 1,
+        "nombre": "Home Barista Espresso y Latte Art – BARCELONA",
+        "img": "/img/tiendas/1-2.jpg",
+        "precio": "90 $",
+        "descripcion": "Con este workshop aprenderás todo lo que debes saber para preparar el espresso perfecto en casa o en tu local de hostelería. Te enseñaremos a emulsionar la leche, sacarle el máximo partido a tu molino y cuidar de tu máquina espresso como los auténticos profesionales del café. Todo lo que debes saber para preparar un buen espresso en casa, emulsionar la leche, sacar el mayor partido a tu molino (tráelo si puedes) y cuidar tu máquina de espresso, además de aprender a crear corazones, tulipas y espigas con la espuma de la leche. Nota: Evita venir con perfumes o cremas con aroma fuerte.",
+        "idioma": "IDIOMA: Español"
+      },
+      {
+        "id": 2,
+        "nombre": "Home Barista Espresso y Latte Art – MADRID",
+        "img": "/img/tiendas/9.jpg",
+        "precio": "90 $",
+        "descripcion": "Con este workshop aprenderás todo lo que debes saber para preparar el espresso perfecto en casa o en tu local de hostelería. Te enseñaremos a emulsionar la leche, sacarle el máximo partido a tu molino y cuidar de tu máquina espresso como los auténticos profesionales del café. Todo lo que debes saber para preparar un buen espresso en casa, emulsionar la leche, sacar el mayor partido a tu molino (tráelo si puedes) y cuidar tu máquina de espresso, además de aprender a crear corazones, tulipas y espigas con la espuma de la leche. Nota: Evita venir con perfumes o cremas con aroma fuerte.",
+        "idioma": "IDIOMA: Español"
+      },
+      {
+        "id": 3,
+        "nombre": "Home Barista Cata Mercado Actual Café – PAMPLONA",
+        "img": "/img/tiendas/9.jpg",
+        "precio": "40 $",
+        "descripcion": "En nuestro workshop sensorial de café aprenderás a catar utilizando todos tu sentidos. Te guiaremos en un proceso donde el gusto y el olfato se combinan para identificar los sabores únicos y característicos de cada origen. Durante el taller, realizaremos una cata guiada en la que exploraremos los aromas del café y del agua, y los compararemos con diferentes alimentos para apreciar mejor los sabores, la frescura y las texturas. ¡Una experiencia práctica y llena de descubrimientos!",
+        "idioma": "IDIOMA: Español"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "Formación SCA - Reglada por Specialty Coffee Association",
+    "curses": [
+      {
+        "id": 0,
+        "nombre": "Combo Barista Skills Básico + Intermedio – SCA",
+        "img":"/img/tiendas/SCA_barista-uai-1142x1142.jpg",
+        "precio": "1.250,00 €",
+        "descripcion": "En La Escuela de Baristas ponemos en marcha el Combo SCA Barista Skills Básico + Intermedio. Este curso ha sido diseñado pensando en ti, para que lleves tus habilidades como barista al siguiente nivel. El curso combina lo mejor de ambos niveles en un solo programa, optimizando la teoría y dándote más tiempo para practicar y perfeccionar tus habilidades en cada aspecto del proceso de preparación de café. Durante las sesiones prácticas aprenderás a trabajar en equipo, ajustar con precisión la molienda del café, dominar el flujo de trabajo en una cafetería y a medir el TDS para lograr extracciones perfectas.",
+        "duracion": "DURACIÓN: de 9:00 a 17:00 horas",
+        "capacidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      },
+      {
+        "id": 1,
+        "nombre": "Combo Barista Skills Básico + Intermedio – SCA",
+        "img":"/img/tiendas/SCA_barista-uai-1142x1142.jpg",
+        "precio": "1.250,00 €",
+        "descripcion": "En La Escuela de Baristas ponemos en marcha el Combo SCA Barista Skills Básico + Intermedio. Este curso ha sido diseñado pensando en ti, para que lleves tus habilidades como barista al siguiente nivel. El curso combina lo mejor de ambos niveles en un solo programa, optimizando la teoría y dándote más tiempo para practicar y perfeccionar tus habilidades en cada aspecto del proceso de preparación de café. Durante las sesiones prácticas aprenderás a trabajar en equipo, ajustar con precisión la molienda del café, dominar el flujo de trabajo en una cafetería y a medir el TDS para lograr extracciones perfectas.",
+        "duracion": "DURACIÓN: de 9:00 a 17:00 horas",
+        "capacidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      },
+      
+      {
+        "id": 2,
+        "nombre": "Combo Barista Skills Básico + Intermedio – SCA",
+        "img":"/img/tiendas/SCA_barista-uai-1142x1142.jpg",
+        "precio": "1.250,00 €",
+        "descripcion": "En La Escuela de Baristas ponemos en marcha el Combo SCA Barista Skills Básico + Intermedio. Este curso ha sido diseñado pensando en ti, para que lleves tus habilidades como barista al siguiente nivel. El curso combina lo mejor de ambos niveles en un solo programa, optimizando la teoría y dándote más tiempo para practicar y perfeccionar tus habilidades en cada aspecto del proceso de preparación de café. Durante las sesiones prácticas aprenderás a trabajar en equipo, ajustar con precisión la molienda del café, dominar el flujo de trabajo en una cafetería y a medir el TDS para lograr extracciones perfectas.",
+        "duracion": "DURACIÓN: de 9:00 a 17:00 horas",
+        "capacidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      },
+      {
+        "id": 3,
+        "nombre": "Sensory Skills Professional – SCA",
+        "img":"/img/tiendas/SCA_barista-uai-1142x1142.jpg",
+        "precio": "1.250,00 €",
+        "descripcion": "En La Escuela de Baristas ponemos en marcha el Combo SCA Barista Skills Básico + Intermedio. Este curso ha sido diseñado pensando en ti, para que lleves tus habilidades como barista al siguiente nivel. El curso combina lo mejor de ambos niveles en un solo programa, optimizando la teoría y dándote más tiempo para practicar y perfeccionar tus habilidades en cada aspecto del proceso de preparación de café. Durante las sesiones prácticas aprenderás a trabajar en equipo, ajustar con precisión la molienda del café, dominar el flujo de trabajo en una cafetería y a medir el TDS para lograr extracciones perfectas.",
+        "duracion": "DURACIÓN: de 9:00 a 17:00 horas",
+        "capacidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      },
+      {
+        "id": 4,
+        "nombre": "Sensory Skills Professional – SCA",
+        "img":"/img/tiendas/SCA_brewing-uai-1142x1142.jpg",
+        "precio": "1.250,00 €",
+        "descripcion": "En La Escuela de Baristas ponemos en marcha el Combo SCA Barista Skills Básico + Intermedio. Este curso ha sido diseñado pensando en ti, para que lleves tus habilidades como barista al siguiente nivel. El curso combina lo mejor de ambos niveles en un solo programa, optimizando la teoría y dándote más tiempo para practicar y perfeccionar tus habilidades en cada aspecto del proceso de preparación de café. Durante las sesiones prácticas aprenderás a trabajar en equipo, ajustar con precisión la molienda del café, dominar el flujo de trabajo en una cafetería y a medir el TDS para lograr extracciones perfectas.",
+        "duracion": "DURACIÓN: de 9:00 a 17:00 horas",
+        "capacidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      },
+      
+      {
+        "id": 5,
+        "nombre": "Sensory Skills Professional – SCA",
+        "img":"/img/tiendas/SCA_brewing-uai-1142x1142.jpg",
+        "precio": "1.250,00 €",
+        "descripcion": "En La Escuela de Baristas ponemos en marcha el Combo SCA Barista Skills Básico + Intermedio. Este curso ha sido diseñado pensando en ti, para que lleves tus habilidades como barista al siguiente nivel. El curso combina lo mejor de ambos niveles en un solo programa, optimizando la teoría y dándote más tiempo para practicar y perfeccionar tus habilidades en cada aspecto del proceso de preparación de café. Durante las sesiones prácticas aprenderás a trabajar en equipo, ajustar con precisión la molienda del café, dominar el flujo de trabajo en una cafetería y a medir el TDS para lograr extracciones perfectas.",
+        "duracion": "DURACIÓN: de 9:00 a 17:00 horas",
+        "capacidad": "CAPACIDAD: 4 personas",
+        "idioma": "IDIOMA: castellano"
+      }
+    ]
+  }
+]

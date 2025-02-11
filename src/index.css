@@ -1,0 +1,24 @@
+@media (width >=500px) and (width < 1500px) {
+  body {
+    min-width: 1500px;
+    min-height: 100vh;
+  }  
+}
+
+@media (width >=1500px) and (width < 2000px) {
+  body {
+    min-width: 2000px;
+    min-height: 100vh;
+  }
+}
+
+
+/* @media screen and (min-width: 2000px) {
+  
+  body {
+    width: 2000px;
+    min-height: 100vh;
+  }
+
+} */
+

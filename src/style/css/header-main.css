@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.scrolled {
+  height: 90px;
+}
+.header_nav_scrolled{
+  display: flex;
+  gap: 410px;
+  height: 90px;
+}
+.logo_scrolled {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_scrolled img{
+  height: 80px;
+}
+
+.article-info{
+  position: relative;
+  top: -250px;
+}
+.box-sponsor{
+  position: relative;
+  top: -250px;
+}

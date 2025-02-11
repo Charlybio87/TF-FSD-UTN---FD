@@ -1,0 +1,127 @@
+footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 2000px;
+}
+.box-footer{
+  width: 1316px;
+  margin: 0 342px 0 342px;
+  padding: 36px 36px 0 36px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+.box-footer-suscrib{
+  width: 1247px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.suscrib_info{
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.box-form-suscrib{
+  width: 400px;
+  padding-left: 36px;
+  display: flex;
+  flex-direction: column;
+}
+.question-segurity input{
+  width: 98%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #F7F7F7;
+}
+.box-mail-suscrib{
+  width: 100%;
+  height: 50px;
+  margin-top: 18px;
+  display: flex;
+  align-items: end;
+}
+.box-mail-text{
+  width: 250px;
+}
+.box-mail-text input{
+  width: 99%;
+  padding: 7px 15px 8px 15px;
+  background-color: transparent;
+  border: 1px solid #F7F7F7;
+  border-right: 1px solid black;
+  color: white;
+}
+.box-mail-button input{
+  width: 160px;
+  padding: 7px 15px 8px 15px;
+  background-color: #F7F7F7;
+  color: rgb(48, 49, 51);
+}
+.separador{
+  width: 1316px;
+  margin: 0 342px 0 342px;
+  padding: 36px 36px 0 36px;
+  background-color: black;
+}
+.box-footer-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1316px;
+  margin: 0 342px 0 342px;
+  padding: 36px 36px 0 36px;
+}
+.box-footer-info-left{
+  display: flex;
+  flex-direction: column;
+  width: 546px;
+  height: 204px;
+}
+.box-footer-info-right{
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+
+}
+.box-footer-info-right ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.box-footer-info-right ul a{
+  text-decoration: none;
+  color: #CCCCCC;
+  margin-left: 10px ;
+}
+.box-footer-info-right_contacto{
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  justify-content: space-between;
+}
+.box-footer-info-right_contacto a{
+  text-decoration: none;
+  color: #CCCCCC;
+}
+.box-footer-creditos{
+  width: 1316px;
+  margin: 0 342px 0 342px;
+  padding: 27px 36px 27px 36px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.box-footer-creditos-info{
+  width: 888px;
+  height: 53px;
+}
+.box-footer-creditos a{
+  text-decoration: none;
+  color: #CCCCCC;
+}
