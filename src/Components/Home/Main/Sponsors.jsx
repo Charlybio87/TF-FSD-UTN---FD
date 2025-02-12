@@ -1,8 +1,8 @@
 import React from 'react'
-import dallaCorte from '../../../img/5-uai-945x340.png'
-import beanGreen from '../../../img/bean-green-ok-uai-945x340.png'
-import cinoart from '../../../img/cinoart-uai-1032x372.png'
-import markIbar from '../../../img/1-uai-480x173.png'
+import dallaCorte from '../../../../public/img/5-uai-945x340.png'
+import beanGreen from '../../../../public/img/bean-green-ok-uai-945x340.png'
+import cinoart from '../../../../public/img/cinoart-uai-1032x372.png'
+import markIbar from '../../../../public/img/1-uai-480x173.png'
 
 const Sponsors = () => {
   return (

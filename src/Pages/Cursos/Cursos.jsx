@@ -17,7 +17,7 @@ const Cursos = () => {
         <main className='container-curses'>
         {
           objeto.isLoading
-            ? <h2>Cargando...</h2>
+            ? <h2 className='cargando'>Cargando...</h2>
             : <div> 
               {
                 objeto.products.map((producto)=>{

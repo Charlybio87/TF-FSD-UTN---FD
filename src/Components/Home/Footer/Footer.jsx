@@ -1,9 +1,9 @@
 import React from 'react'
-import logo from '../../../img/lg-footer-la-escuela-de-baristas-ok.png'
+import logo from '../../../../public/img/lg-footer-la-escuela-de-baristas-ok.png'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='container_footer'>
       <div className='box-footer'>
         <div className='box-footer-suscrib'>
           <div className='suscrib_info'>

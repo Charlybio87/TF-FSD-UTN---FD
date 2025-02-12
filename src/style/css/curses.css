@@ -1,108 +1,207 @@
-.container-curses {
-  max-width: 2000px;
-background-color: white;
-color: black;
-margin-top: 134px;
-}
-.titulo-curses{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.style-titulo{
-  padding: 50px 0 50px 0;
-}
-.flex-curses{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.curse-container {
-  padding: 10px;
-  border: 1px solid transparent;
-}
-
-.img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.styled-img {
-  width: 396px;
-  height: 396px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.styled-p {
-  font-size: 15px;
-  font-weight:400;
-  cursor: pointer;
-  padding: 30px 0 ;
-}
-
-.img-container img {
-  /* filter: blur(3px);
-  transition: filter 0.3s ease; */
-  filter: brightness(100%);
-  transition: transform 0.3s ease;
-}
-
-.img-container:hover img {
-  /* filter: blur(0); */
-  transform: scale(1.05);
-  filter: brightness(80%);
-}
-
-.container-course{
-  display: flex;
-  justify-content: center;
-}
-.container-coursePage{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1320px;
-  margin: 0 340px;
-  padding: 108px 32px;
-}
-.container-coursePage .row-der{
-  width: 670px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.row-der form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-}
-.row-der form label {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.row-der form select{
-  height: 40px;
-  background-color: white;
-  color: black;
-  padding: 10px 15px;
-}
-.row-der form button{
-  height: 40px;
-  background-color: #303133;
-  color: #F7F7F7;
-  padding: 10px 15px;
-}
-.info-curso{
-  padding: 36px;
-  background-color: #F7F7F7;
-}
-.row-coursePage img{
-  width: 430px;
-  height: 430px;
-  margin: 0;
-}
+@media screen and (min-width: 769px ) and (max-width: 2560px) {
+  .container-curses {
+      background-color: white;
+      color: black;
+      margin-top: 134px;
+    }
+    .titulo-curses{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .style-titulo{
+      padding: 50px 0 50px 0;
+    }
+    .flex-curses{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .curse-container {
+      padding: 10px;
+      border: 1px solid transparent;
+    }
+  
+    .img-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .styled-img{
+      width: 396px;
+      height: 396px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  
+    .styled-p {
+      font-size: 15px;
+      font-weight:400;
+      text-align: justify;
+      cursor: pointer;
+      padding: 30px 0 ;
+      color: black;
+    }
+  
+    /* Estilo CoursePage*/
+    .container-course{
+      display: flex;
+      justify-content: center;
+    }
+    .container-coursePage{
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+      width: 1320px;
+      margin: 0 340px;
+      padding: 108px 32px;
+    }
+    .container-coursePage .row-der{
+      width: 670px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .row-der form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+    }
+    .row-der form label {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .row-der form select{
+      height: 40px;
+      background-color: white;
+      color: black;
+      padding: 10px 15px;
+    }
+    .row-der form button{
+      height: 40px;
+      background-color: #303133;
+      color: #F7F7F7;
+      padding: 10px 15px;
+    }
+    .info-curso{
+      padding: 36px;
+      background-color: #F7F7F7;
+    }
+    .row-coursePage img{
+      width: 430px;
+      height: 430px;
+      margin: 0;
+    }
+  }
+  /* @media screen and  (min-width: 330px) and (max-width: 1440px){
+  
+  } */
+  @media screen and (min-width: 300px ) and (max-width: 768px ) {
+    .container-curses{
+      margin-top: 85px;
+      background-color: white;
+      color: black;
+    }
+    .titulo-curses{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .style-titulo{
+      width: 230px;
+      padding: 36px 25px 20px 25px;
+      text-align: center;
+    }
+    .flex-curses{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .img-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .styled-p{
+      color: black;
+      margin: 25px 0 30px 0;
+      font-size: 15px;
+      text-align: center;
+      height: 40px;
+      width: 220px;
+    }
+  
+    /*Estilo CoursePage*/
+    .container-coursePage .styled-img{
+      width: 85vw;
+    }
+    .container-coursePage {
+      padding: 36px 20px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 40px;
+    }
+    .row-der{
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .info-curso{
+      padding: 36px;
+      background-color: #f7f7f7
+    }
+    .row-der form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .row-der form label {
+      font-size: 18px;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .row-der form select{
+      height: 40px;
+      background-color: white;
+      color: black;
+      padding: 10px 15px;
+    }
+    .row-der form button{
+      height: 40px;
+      background-color: #303133;
+      color: #F7F7F7;
+      padding: 10px 15px;
+    }
+    .counter-carrito{
+      width: 100%;
+      background-color: #F7F7F7;
+    }
+  }
+  /* Efecto de las Card */
+  .img-container img {
+    /* filter: blur(3px);
+   transition: filter 0.3s ease; */
+    filter: brightness(100%);
+    transition: transform 0.3s ease;
+  }
+  .img-container:hover img {
+   /* filter: blur(0); */
+    transform: scale(1.05);
+    filter: brightness(80%);
+  }
+  .cargando {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

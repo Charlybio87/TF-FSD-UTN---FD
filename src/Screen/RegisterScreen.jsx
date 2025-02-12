@@ -4,12 +4,10 @@ import ENVIROMENT from '../utils/constants/enviroment'
 
 const RegisterScreen = () => {
 	const { form_state, handleChangeInput } = useForm({ username: "", email: "", password: "" })
-	
-
-	const handleSubmitForm = async (event) => {
-		event.preventDefault()
+	const handleSubmitForm = async (e) => {
+		e.preventDefault()
 		try {
-			const res = await fetch(ENVIROMENT.API_URL + "/api/auth/register", {
+			const response = await fetch(ENVIROMENT.API_URL + "/api/auth/register", {
 				method: "POST",
 				headers: {
 					'Content-Type': 'application/json'
@@ -17,19 +15,18 @@ const RegisterScreen = () => {
 				},
 				body: JSON.stringify(form_state)
 			})
-			const data = await res.json()
+
+			const data = await response.json()
 			console.log(data)
 
 		} catch (error) {
-			console.error("Error al crear usuario", error)
+			console.error("Error al registrar el usuario", error)
 		}
 	}
 
 	const errores = {
-		username: [
-		],
-		email: [
-		],
+		username: [],
+		email: [],
 		password: []
 	}
 
@@ -44,38 +41,61 @@ const RegisterScreen = () => {
 
 	return (
 		<div>
+			<h2>RegistroScreen</h2>
 			<h1>Registro</h1>
-
 			<form onSubmit={handleSubmitForm}>
-
 				<div>
 					<label htmlFor="username">Ingresa tu nombre de usuario:</label>
-					<input name='username' id='username' value={form_state.username} onChange={handleChangeInput} />
-					{errores.username?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)}
-
-
+					<input 
+						name='username' 
+						id='username' 
+						placeholder='Joedoe'
+						value={form_state.username} 
+						onChange={handleChangeInput} 
+					/>
+					{
+						errores.username?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)
+					}
 				</div>
-
 				<div>
 					<label htmlFor="email">Ingresa tu email:</label>
-					<input name='email' id='email' placeholder='joedoe@gmail' value={form_state.email} onChange={handleChangeInput} />
-
-					{errores.email?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)}
+					<input 
+						name='email' 
+						id='email' 
+						placeholder='joedoe@gmail' 
+						value={form_state.email} 
+						onChange={handleChangeInput} 
+					/>
+					{
+						errores.email?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)
+					}
 				</div>
-
 				<div>
 					<label htmlFor="password">Ingresa tu contraseña:</label>
-					<input name='password' id='password' value={form_state.password} onChange={handleChangeInput} />
-					<button type='submit' disabled={errores.email.length > 0 || errores.password.length || !form_state.email || !form_state.password}>Crear usuario</button>
-					{errores.password?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)}
-
+					<input 
+						name='password' 
+						id='password' 
+						value={form_state.password} 
+						onChange={handleChangeInput} 
+					/>
+					<button 
+						type='submit' 
+						disabled=
+						{
+							errores.email.length > 0 || 
+							errores.password.length || 
+							!form_state.email || 
+							!form_state.password
+						}
+					>
+						Crear usuario
+					</button>
+					{
+						errores.password?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)
+					}
 				</div>
-
 			</form>
-
-
 		</div>
-
 	)
 }
 

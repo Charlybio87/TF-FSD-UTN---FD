@@ -6,7 +6,7 @@ const useForm = (form_initial_state) =>{
 
     const handleChangeInput = (event) =>{
         setFormState(
-            (prev_form_state) =>{
+            (prev_form_state) =>{ //
                 const field_name = event.target.name //valor que actualiza el campo con su respectiva variable
                 const field_value = event.target.value
                 return {...prev_form_state, [field_name]: field_value}

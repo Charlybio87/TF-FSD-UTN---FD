@@ -1,19 +1,14 @@
-@media (width > 320px ) and (width <= 2000px) {
-  .box-container_header{
+@media screen and (min-width: 769px ) and (max-width: 2560px) {
+  /* .box-container_header{
     background-color: black;
-    width: 2000px;
-  }
-  .container_header_nav{
-    width: 1350px;
-    display: flex;
-    margin: 0 325px;
-  }
+    min-width: 100vw
+  } */
   .header_nav {
     display: flex;
-    gap: 410px;
-    width: 1350px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     height: 134px;
-    padding: 0 36px;
   }
   .logo{
     height: 134px;
@@ -56,14 +51,24 @@
     width: 100px;
   }
 }
-@media screen and (width <= 320px) {
-  .container_header_nav{
+/* @media screen and  (min-width: 768px) and (max-width: 1440px){
+
+} */
+
+@media screen and (min-width: 300px ) and (max-width: 768px){
+  /* .box-container_header{
+    width: 100vw;
     background-color: black;
-    width: 320px;
+  } */
+  .container_header_nav{
+    width: 100vw;
   }
-  .header_nav {
+  .container_header_nav {
     display: flex;
     flex-direction: column;
+    width: 100vw;
   }
-
+  .header_nav{
+    width: 100vw;
+  }
 }

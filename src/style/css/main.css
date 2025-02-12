@@ -1,116 +1,223 @@
-.box-container_main{
-  height: 2520px;
-  display: flex;
-  flex-direction: column;
-}
-
-.article-info{
-  background-image: url(../../img/fondo-la-escuela.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 2000px;
-  height: 1350px;
-}
-.container-main{
-  margin-top: 100px;
-  padding: 0 ;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: black;
-}
-.main-info{
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.main-info-text-1{
-  width: 750px;
-  height: 538px;
-  display: flex;
-  flex-direction: column;
-}
-.main-info-text-1 h2{
-  width: 750px;
-  height: 140px;
-  font-size: 65px;
-  text-align: left;
-}
-.main-info-text-1 p{
-  width: 750px;
-  height: 140px;
-  margin-top: 80px;
-  text-align: left;
-}
-
-.main-info-text-1 li{
-  list-style: none;
-  padding-left: 27px;
-}
-.main-info-text-1 a{
-  text-decoration: none;
-  color: black;
-}
-.main-info-img{
-  width: 702px;
-  height: 538px;
-  display: flex;
-  flex-direction: column;
-  padding-top: -10px;
-}
-.main-info .main-info-img img{
-  width: 87%;
-  height: 110%;
-}
-.main-info-inf{
-  margin-top: 95px ;
-}
-.main-info-inf .main-info-text-1 p{
-margin-top: 0px;
-
-}
-.main-info-p{
-  width: 750px;
-  height: 450px;
-  display: flex;
-  flex-direction: column;  
-}
-.main-info-p h2{
-  height: auto;
-}
-.main-info-p p{
-height: auto;
-padding-top: 40px;
-}
-.main-info-p span{
-  padding-top: 75px;
-  height: auto;
-}
-.main-info-p span a{
-  background-color: rgb(48, 49, 51);
-  color: white;
-  width: 280px;
-  height: 18px;
-  padding: 13px 31px;
-  border: 1px solid rgb(48, 49, 51);
-}
-.box-sponsor{
-  background-color: #F7F7F7;
-  width: 100%;
-  height: 164px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 25px;
-}
-.box-sponsor img{
-  display: flex;
-  width: 255px;
-  height: 100px;
-  margin: 30px 0;
-}
-
+@media screen and (min-width: 769px ) and (max-width: 2560px) {
+  .box-container_main{
+      width: 100%;
+      height: 2656px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .article-carrusel img{
+      min-width: 100%;
+    }
+    .article-info{
+      background-image: url(../../../public/img/fondo-la-escuela.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+    .container-main{
+      margin-top: 144px;
+      padding: 0 ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+    }
+    .main-info{
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .main-info-text-1{
+      width: 750px;
+      height: 538px;
+      display: flex;
+      flex-direction: column;
+      
+    }
+    .main-info-text-1 h2{
+      width: 780px;
+      height: 140px;
+      font-size: 70px;
+      font-weight: 800;
+      font-family: Hind;
+      line-height: 70px;
+  
+    }
+    .main-info-text-1 p{
+      width: 750px;
+      margin-top: 36px;
+      text-align: left;
+    }
+    .main-info_items{
+      margin-top: 36px ;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-info-text-1 li{
+      padding-left: 27px;
+    }
+    .main-info_items i{
+      margin: 0 9px 0 -27px;
+    }
+    .main-info-text-1 a{
+      color: black;
+    }
+    .main-info-img{
+      width: 702px;
+      height: 538px;
+      display: flex;
+      flex-direction: column;
+      padding-top: -10px;
+    }
+    .main-info .main-info-img img{
+      width: 87%;/*593px*/
+      height: 110%;/*568px*/
+    }
+    .main-info-inf{
+      margin-top: 180px ;
+    }
+    .main-info-inf h2{
+      height: 70px;
+    }
+    .main-info-p span{
+      padding-top: 75px;
+      height: auto;
+    }
+    .main-info-p span a{
+      background-color: rgb(48, 49, 51);
+      color: white;
+      width: 280px;
+      height: 18px;
+      padding: 13px 31px;
+      border: 1px solid rgb(48, 49, 51);
+    }
+    .box-sponsor{
+      background-color: #F7F7F7;
+      width: 100%;
+      height: 164px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 25px;
+    }
+    .box-sponsor img{
+      display: flex;
+      width: 255px;
+      height: 100px;
+      margin: 30px 0;
+    }
+    @media (width >= 769px) and (width <= 1685px){
+      .main-info .main-info-img img{
+        width: 278px/*994px*/;
+        height:393px/*952px*/;
+      }
+      .img_ppl_1{
+        position: relative;
+        top: 350px;
+        left: -100px;
+      }
+      .img_ppl_2{
+        position: relative;
+        top: -350px;
+        left: 100px;
+      }
+  
+    }
+  }
+  /* @media screen and  (min-width: 768px) and (max-width: 1440px){
+  
+  } */
+  @media screen and (min-width: 300px ) and (max-width: 768px) {
+    .box-container_main{
+      width: 100vw;
+    }
+    img{
+      width: 235px;
+    }
+    .article-carrusel{
+      height: 700px;
+    }
+    .article-carrusel img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+    }
+    .article-info{
+      background-image: url(../../img/fondo-la-escuela.svg);
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      background-size: cover;
+    }
+    .main-info{
+      margin: 0 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+    .main-info-text-1{
+      margin-top: 100px;
+      margin-bottom: 36px;
+      color: black;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+    }
+    .main-info-text-1 h2{
+      font-family: var(--fonts-text-secundary);
+      font-size: 35px;
+      font-weight: 600;
+      letter-spacing: normal;
+      line-height: 35px;
+      text-align: left;
+    }
+    .main-info_items{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .main-info_items i{
+      padding-top: 5px;
+    }
+    .main-info_items .items_arrows{
+      display: flex;
+      gap: 15px;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 31.5px;
+    }
+    .items_arrows a{
+      color: black;
+    }
+    .img_ppl_2{
+      display: none;
+    }
+    .main-info-inf{
+      margin-top: -125px;
+    }
+    .main-info-p span{
+      margin-top: 36px;
+      width: 200px;
+    }
+    .btn-link{
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: rgb(48, 49, 51);
+      color: white;
+      height: 50px;
+      margin: 1px;
+      padding: 13px 31px;
+      border: 1px solid rgb(48, 49, 51);
+      font-family: var(--fonts-text-secundary);
+      text-align: center;
+      line-height: 15px;
+    }
+    .box-sponsor{
+      display: none;
+    }
+  }
+  
+  

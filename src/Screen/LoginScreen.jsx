@@ -1,9 +1,14 @@
 import React from 'react'
 import useForm from '../hooks/useForm'
 import ENVIROMENT from '../utils/constants/enviroment'
+import { Link } from 'react-router-dom'
 
 export const LoginScreen = () => {
   const { form_state, handleChangeInput } = useForm({email:'', password:''})//Como empieza el formulario
+  const url = new URLSearchParams(window.location.search) //permite acceder y manipular los parámetros de la URL 
+    if(url.get('verified')){
+        alert('Cuenta verificada')
+    }
   const handleSubmitForm = async (e) => {
     try {
       e.preventDefault() //prevenimos que se recargue la pagina
@@ -35,8 +40,7 @@ export const LoginScreen = () => {
   form_state.password && form_state.password.length < 5 && errores.password.push("El minimo de caracteres es 5")
 
   return (
-    <div>
-      <h2>LoginScreen</h2>
+    <main className='auth-screen'>
       <h1>Inicia sesion </h1>
 			<form onSubmit={handleSubmitForm} >
 				<div>
@@ -66,15 +70,24 @@ export const LoginScreen = () => {
             errores.password.map((error, index) => <p style={{color: 'red'}} key={index}>{error}</p>)
           }
 				</div>
-				<button type='submit' disabled={
-          errores.email.length || 
-          errores.password.length || 
-          !form_state.email || 
-          !form_state.password
-        }>
+				<button 
+          type='submit' 
+          disabled={
+            errores.email.length || 
+            errores.password.length || 
+            !form_state.email || 
+            !form_state.password
+          }
+        >
           Iniciar sesion
         </button>
+        <br/>
+        <span>Aun no tienes cuenta?<Link to={'/register'}> 
+        <br/>
+        Registrate </Link></span>
+        <br/>
+        <Link to={'/forgot-password'}> Olvide mi contraseña </Link>
 			</form>
-    </div>
+    </main>
   )
 }

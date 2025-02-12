@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Footer, Header } from '../../Components/Home'
 import { useNavigate, useParams } from 'react-router-dom';
-import jsonData from '../../../src/data/products.json'
+import jsonData from '../../../public/data/products.json'
 import CoursePage from './CoursePage';
 
 const Curses = () => {
