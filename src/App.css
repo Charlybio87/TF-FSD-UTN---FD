@@ -39,3 +39,45 @@
     background-color: brown;
   }
 } */
+
+.title{
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.auth-screen{
+  display: flex;
+  padding: 16px;
+  color: var(--primary-text-color); 
+  background-image: url(../../../public/img/fondo-la-escuela.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 750px;
+  width: 100%;
+}
+
+.auth-form .input-container{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.auth-form .input-container input{
+  padding: 5px;
+  border: none;
+  border-bottom: 1 solid rgb(64,64,64);
+}
+/* @media screen and (max-width: 768px) {
+  .auth-screen{    
+  }
+} */

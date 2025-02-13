@@ -23,6 +23,8 @@ export const LoginScreen = () => {
 
       const data = await response.json()
       console.log(data)
+      sessionStorage.setItem('access_toke', data.data.access_token)
+
 
     } catch (error) {
       console.error("Error al loguear", error)
@@ -41,9 +43,9 @@ export const LoginScreen = () => {
 
   return (
     <main className='auth-screen'>
-      <h1>Inicia sesion </h1>
-			<form onSubmit={handleSubmitForm} >
-				<div>
+			<form onSubmit={handleSubmitForm} className='auth-form'>
+        <h1 className='title'> Login </h1>
+				<div className='input-container'>
 					<label htmlFor='email'>Ingresa tu email:</label>
 					<input
 						name='email'
@@ -57,13 +59,26 @@ export const LoginScreen = () => {
             errores.email.map((error, index) => <p key={index} style={{color: 'red'}}>{error}</p>)
           }
 				</div>
-				<div>
+				<div className='input-container'>
 					<label htmlFor='password'>Ingresa tu contraseña:</label>
 					<input
 						name='password'
 						id='password'
             type='password'
             value={form_state.password}
+            onChange={handleChangeInput}
+					/>
+          {
+            errores.password.map((error, index) => <p style={{color: 'red'}} key={index}>{error}</p>)
+          }
+				</div>
+        <div className='input-container'>
+					<label htmlFor='role'>Ingresa tu role:(user/admin)</label>
+					<input
+						name='role'
+						id='role'
+            type='role'
+            value={form_state.role}
             onChange={handleChangeInput}
 					/>
           {
@@ -81,11 +96,7 @@ export const LoginScreen = () => {
         >
           Iniciar sesion
         </button>
-        <br/>
-        <span>Aun no tienes cuenta?<Link to={'/register'}> 
-        <br/>
-        Registrate </Link></span>
-        <br/>
+        <span>Aun no tienes cuenta?<Link to={'/register'}> Registrate </Link></span>
         <Link to={'/forgot-password'}> Olvide mi contraseña </Link>
 			</form>
     </main>
