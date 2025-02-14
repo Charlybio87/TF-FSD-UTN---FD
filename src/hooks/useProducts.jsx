@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import solicitarProductos from "../fetching/productsFetching"
 
-const useProducts = () => {
+export const useProducts = () => {
   
   const [isLoading, setIsLoading] = useState(true)
   const [products, setProducts] = useState(null)
@@ -23,5 +23,3 @@ const useProducts = () => {
     products: products
   }
 }
-
-export default useProducts

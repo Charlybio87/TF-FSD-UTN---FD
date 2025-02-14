@@ -3,7 +3,7 @@ import useForm from '../hooks/useForm'
 import ENVIROMENT from '../utils/constants/enviroment'
 
 const RegisterScreen = () => {
-	const { form_state, handleChangeInput } = useForm({ username: "", email: "", password: "" })
+	const { form_state, handleChangeInput } = useForm({ username: "", email: "", role:"",password: "" })
 	const handleSubmitForm = async (e) => {
 		e.preventDefault()
 		try {
@@ -64,6 +64,18 @@ const RegisterScreen = () => {
 						id='email' 
 						placeholder='joedoe@gmail' 
 						value={form_state.email} 
+						onChange={handleChangeInput} 
+					/>
+					{
+						errores.email?.map((error, index) => <p key={index} style={{ color: "red" }}>{error}</p>)
+					}
+				</div>
+				<div>
+					<label htmlFor="role">Ingresa su Rol:(user/admin )</label>
+					<input 
+						name='role' 
+						id='role' 
+						value={form_state.role} 
 						onChange={handleChangeInput} 
 					/>
 					{

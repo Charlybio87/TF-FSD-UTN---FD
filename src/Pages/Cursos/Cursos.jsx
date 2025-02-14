@@ -1,8 +1,8 @@
 import React from 'react'
 import { Footer, Header } from '../../Components/Home'
-import useProducts from '../../hooks/useProducts'
 import '../../style/css/curses.css'
 import { Link } from 'react-router-dom'
+import { useProducts } from '../../hooks/useProducts'
 
 const Cursos = () => {
   

@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import useForm from '../hooks/useForm'
 import ENVIROMENT from '../utils/constants/enviroment'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../Context/AuthContext'
 
 export const LoginScreen = () => {
-  const { form_state, handleChangeInput } = useForm({email:'', password:''})//Como empieza el formulario
+
+  const {login, isAuthenticatedState} = useContext(AuthContext)
+  console.log('Authenticated: ', isAuthenticatedState)
+  
+  const navigate = useNavigate()
+  
+  const { form_state, handleChangeInput } = useForm({email:'', password:'',role:''})//Como empieza el formulario
   const url = new URLSearchParams(window.location.search) //permite acceder y manipular los parámetros de la URL 
     if(url.get('verified')){
         alert('Cuenta verificada')
@@ -23,8 +30,9 @@ export const LoginScreen = () => {
 
       const data = await response.json()
       console.log(data)
-      sessionStorage.setItem('access_toke', data.data.access_token)
-
+      // sessionStorage.setItem('access_toke', data.data.access_token)
+      login(data.data.access_token)
+      navigate('/')
 
     } catch (error) {
       console.error("Error al loguear", error)
@@ -91,7 +99,8 @@ export const LoginScreen = () => {
             errores.email.length || 
             errores.password.length || 
             !form_state.email || 
-            !form_state.password
+            !form_state.password || 
+            !form_state.role
           }
         >
           Iniciar sesion

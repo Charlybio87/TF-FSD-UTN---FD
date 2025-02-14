@@ -1,10 +1,8 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 import useForm from '../hooks/useForm'
 import ENVIROMENT from '../utils/constants/enviroment'
 
 const ResetPasswordScreen = () => {
-    const navigate = useNavigate()
     const url = new URLSearchParams(window.location.search)
     const reset_token = url.get('reset_token')
     const { form_state, handleChangeInput } = useForm({ password: '' })
@@ -22,10 +20,6 @@ const ResetPasswordScreen = () => {
             const data = await response.json()
             console.log(data)
 
-            // Redirigir a la pantalla de inicio de sesión si el restablecimiento fue exitoso
-            if (response.ok) {
-                navigate('/login')
-            }
         } catch (error) {
             console.error(error)
         }

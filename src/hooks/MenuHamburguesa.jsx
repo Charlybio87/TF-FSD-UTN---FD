@@ -18,7 +18,7 @@ const MenuHamburguesa = () => {
       {menuVisible && (
         <div  className='ul-menu'>
           <ul  style={styles.menu}>
-            <li>La Escuela</li>
+            <li><Link to={'/login'}>Login</Link></li>
             <li><Link to={'/cursos'}>Cursos</Link></li>
             <li>Blog</li>
             <li>Contato</li>
