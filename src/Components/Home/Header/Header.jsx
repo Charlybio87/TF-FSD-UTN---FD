@@ -19,7 +19,7 @@ const Header = () => {
             </div>
             <nav className='nav_sup'>
               <ul className='nav_sup_ul'>
-                {/* <li className='menu-item-1'><Link to={'/login'}>Login</Link></li> */}
+                <li className='menu-item-1'><Link to={'/login'}>Login</Link></li>
                 <li className='menu-item-2'>
                   <Link to={'/cursos'}>Cursos</Link>
                   <ul className='sub-menu-item'>
@@ -29,7 +29,7 @@ const Header = () => {
                     <li><a href="#">Formaciones Personalizadas</a></li> */}
                   </ul>
                 </li>
-                <li className='menu-item-3'><a href="#">Blog</a></li>
+                <li className='menu-item-3'><Link to={'/new'}>Nuevos Productos</Link></li>
                 <li className='menu-item-4'><a href="#">Contacto</a></li>
               </ul>
               <ul className='nav_sup_ul'>

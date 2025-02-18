@@ -1,9 +1,9 @@
 import React from 'react'
 import useForm from '../hooks/useForm'
-import ENVIROMENT from '../utils/constants/enviroment'
+import ENVIROMENT from '../utils/constants/enviroment.js'
 
 const RegisterScreen = () => {
-	const { form_state, handleChangeInput } = useForm({ username: "", email: "", role:"",password: "" })
+	const { formState, handleChangeInput } = useForm({ username: "", email: "", role:"",password: "" })
 	const handleSubmitForm = async (e) => {
 		e.preventDefault()
 		try {
@@ -13,7 +13,7 @@ const RegisterScreen = () => {
 					'Content-Type': 'application/json'
 
 				},
-				body: JSON.stringify(form_state)
+				body: JSON.stringify(formState)
 			})
 
 			const data = await response.json()
@@ -30,14 +30,14 @@ const RegisterScreen = () => {
 		password: []
 	}
 
-	form_state.email && form_state.email.length > 30 && errores.email.push("El límite de caracteres es 30")
-	form_state.email && form_state.email.length < 5 && errores.email.push("El mínimo de caracteres es 5")
+	formState.email && formState.email.length > 30 && errores.email.push("El límite de caracteres es 30")
+	formState.email && formState.email.length < 5 && errores.email.push("El mínimo de caracteres es 5")
 
-	form_state.password && form_state.password.length > 30 && errores.password.push("El máximo de caracteres es 30")
-	form_state.password && form_state.password.length < 5 && errores.password.push("El mínimo de caracteres es 5")
+	formState.password && formState.password.length > 30 && errores.password.push("El máximo de caracteres es 30")
+	formState.password && formState.password.length < 5 && errores.password.push("El mínimo de caracteres es 5")
 
-	form_state.username && form_state.username.length > 30 && errores.username.push("El límite de caracteres es 30")
-	form_state.username && form_state.username.length < 5 && errores.username.push("El mínimo de caracteres es 5")
+	formState.username && formState.username.length > 30 && errores.username.push("El límite de caracteres es 30")
+	formState.username && formState.username.length < 5 && errores.username.push("El mínimo de caracteres es 5")
 
 	return (
 		<div>
@@ -50,7 +50,7 @@ const RegisterScreen = () => {
 						name='username' 
 						id='username' 
 						placeholder='Joedoe'
-						value={form_state.username} 
+						value={formState.username} 
 						onChange={handleChangeInput} 
 					/>
 					{
@@ -63,7 +63,7 @@ const RegisterScreen = () => {
 						name='email' 
 						id='email' 
 						placeholder='joedoe@gmail' 
-						value={form_state.email} 
+						value={formState.email} 
 						onChange={handleChangeInput} 
 					/>
 					{
@@ -75,7 +75,7 @@ const RegisterScreen = () => {
 					<input 
 						name='role' 
 						id='role' 
-						value={form_state.role} 
+						value={formState.role} 
 						onChange={handleChangeInput} 
 					/>
 					{
@@ -87,7 +87,7 @@ const RegisterScreen = () => {
 					<input 
 						name='password' 
 						id='password' 
-						value={form_state.password} 
+						value={formState.password} 
 						onChange={handleChangeInput} 
 					/>
 					<button 
@@ -96,8 +96,8 @@ const RegisterScreen = () => {
 						{
 							errores.email.length > 0 || 
 							errores.password.length || 
-							!form_state.email || 
-							!form_state.password
+							!formState.email || 
+							!formState.password
 						}
 					>
 						Crear usuario

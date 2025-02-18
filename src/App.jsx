@@ -31,6 +31,7 @@ const App = () => {
         {/* Rutas Protegidas (Acceso a usuarios)*/}
         <Route element={<ProtectedRoute/>} > 
           <Route path='/inicio' element={<HomeScreen/>}/>
+          <Route path='/new' element={<CreateProductScreen/>}/>
           <Route path='/cursos' element={<Cursos/>}/>
           <Route path='/cursos/producto/:curse_nombre' element={<Curses/>}/>
         </Route>

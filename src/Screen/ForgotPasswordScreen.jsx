@@ -3,7 +3,7 @@ import useForm from '../hooks/useForm'
 import ENVIROMENT from '../utils/constants/enviroment'
 
 const ForgotPasswordScreen = () => {
-    const {form_state, handleChangeInput} = useForm({email:''})
+    const {formState, handleChangeInput} = useForm({email:''})
     const handleSubmitForgotPassword = async (e) => {
         try{
             e.preventDefault()
@@ -12,7 +12,7 @@ const ForgotPasswordScreen = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(form_state)
+                body: JSON.stringify(formState)
             })
             const data = await response.json()
             if(data.ok){

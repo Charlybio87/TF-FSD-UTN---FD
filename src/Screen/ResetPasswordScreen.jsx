@@ -5,7 +5,7 @@ import ENVIROMENT from '../utils/constants/enviroment'
 const ResetPasswordScreen = () => {
     const url = new URLSearchParams(window.location.search)
     const reset_token = url.get('reset_token')
-    const { form_state, handleChangeInput } = useForm({ password: '' })
+    const { formState, handleChangeInput } = useForm({ password: '' })
 
     const handleSubmitResetPassword = async (e) => {
         try {
@@ -15,7 +15,7 @@ const ResetPasswordScreen = () => {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(form_state)
+                body: JSON.stringify(formState)
             })
             const data = await response.json()
             console.log(data)

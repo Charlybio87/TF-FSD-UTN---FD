@@ -20,7 +20,7 @@ const MenuHamburguesa = () => {
           <ul  style={styles.menu}>
             <li><Link to={'/login'}>Login</Link></li>
             <li><Link to={'/cursos'}>Cursos</Link></li>
-            <li>Blog</li>
+            <li><Link to={'/new'}>Nuevos Productos</Link></li>
             <li>Contato</li>
           </ul>
         </div>

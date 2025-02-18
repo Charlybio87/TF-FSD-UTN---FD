@@ -11,11 +11,11 @@ export const LoginScreen = () => {
   
   const navigate = useNavigate()
   
-  const { form_state, handleChangeInput } = useForm({email:'', password:'',role:''})//Como empieza el formulario
-  const url = new URLSearchParams(window.location.search) //permite acceder y manipular los parámetros de la URL 
-    if(url.get('verified')){
-        alert('Cuenta verificada')
-    }
+  const { formState, handleChangeInput } = useForm({email:'', password:'',role:''})//Como empieza el formulario
+  // const url = new URLSearchParams(window.location.search) //permite acceder y manipular los parámetros de la URL 
+  //   if(url.get('verified')){
+  //       alert('Cuenta verificada')
+  //   }
   const handleSubmitForm = async (e) => {
     try {
       e.preventDefault() //prevenimos que se recargue la pagina
@@ -25,7 +25,7 @@ export const LoginScreen = () => {
           'Content-Type': 'application/json', // definimos que se envia json
           // 'x-api-key': ENVIROMENT.API_KEY
         },
-        body: JSON.stringify(form_state) // definimos enviarlo por body hacia el BACKEND
+        body: JSON.stringify(formState) // definimos enviarlo por body hacia el BACKEND
       }) //Envia el formulario al BACKEND
 
       const data = await response.json()
@@ -45,9 +45,9 @@ export const LoginScreen = () => {
   }
 
   //CONDICIONES PARA VALIDAR LOGIN
-  form_state.email && form_state.email.length > 30 && errores.email.push("El limite de caracteres es 30") 
-  form_state.email && form_state.email.length < 5 && errores.email.push("El minimo de caracteres es 5")
-  form_state.password && form_state.password.length < 5 && errores.password.push("El minimo de caracteres es 5")
+  formState.email && formState.email.length > 30 && errores.email.push("El limite de caracteres es 30") 
+  formState.email && formState.email.length < 5 && errores.email.push("El minimo de caracteres es 5")
+  formState.password && formState.password.length < 5 && errores.password.push("El minimo de caracteres es 5")
 
   return (
     <main className='auth-screen'>
@@ -60,7 +60,7 @@ export const LoginScreen = () => {
 						id='email'
             type='email'
             placeholder='joedoe@gmail.com'
-            value={form_state.email}
+            value={formState.email}
             onChange={handleChangeInput}
 					/>
           {
@@ -73,7 +73,7 @@ export const LoginScreen = () => {
 						name='password'
 						id='password'
             type='password'
-            value={form_state.password}
+            value={formState.password}
             onChange={handleChangeInput}
 					/>
           {
@@ -86,7 +86,7 @@ export const LoginScreen = () => {
 						name='role'
 						id='role'
             type='role'
-            value={form_state.role}
+            value={formState.role}
             onChange={handleChangeInput}
 					/>
           {
@@ -98,9 +98,9 @@ export const LoginScreen = () => {
           disabled={
             errores.email.length || 
             errores.password.length || 
-            !form_state.email || 
-            !form_state.password || 
-            !form_state.role
+            !formState.email || 
+            !formState.password || 
+            !formState.role
           }
         >
           Iniciar sesion
